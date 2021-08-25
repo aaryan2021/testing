@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_white_rectangle_btn">
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="15dp"
+                android:text="Start Time"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:id="@+id/textViewStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.5"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="@string/default_time"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_white_rectangle_btn">
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="15dp"
+                android:text="End Time"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:id="@+id/textViewEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.5"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="00.00 AM"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_white_rectangle_btn">
+
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="15dp"
+                android:text="Repeat"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:id="@+id/textViewRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.5"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="15"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutAffirmation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkBoxTextAffirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/written_affirmation_list"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewTextAffirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxAudioAffirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Audio Affirmation List"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewAudioAffirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutEmptyNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/empty_notes"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Affirmation list is empty please add a affirmation first to schedule reminder."
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <com.infoicon.acim.utils.customviews.CustomButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_blue_btn"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="@string/save"/>
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+

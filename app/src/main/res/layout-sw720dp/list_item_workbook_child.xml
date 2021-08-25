@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lesson_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <com.infoicon.acim.utils.customviews.CustomTextViewBold
+        android:id="@+id/textViewLessonTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Lesson 1"
+        android:textSize="@dimen/default_text_size"/>
+
+    <com.infoicon.acim.utils.customviews.CustomTextView
+        android:id="@+id/textViewLesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:drawableRight="@drawable/right_arrow_icon"
+        android:textColor="@color/text_color"
+        android:text="Introduction"
+        android:textSize="@dimen/default_text_size"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_workbook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <com.infoicon.acim.utils.customviews.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/titlebar_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="PART I"
+            android:textSize="15dp"
+            android:textColor="@color/black" />
+
+        <com.infoicon.acim.utils.customviews.CustomTextViewBold
+            android:id="@+id/textViewPartOneIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/default_text_size"
+            android:text="Introduction" />
+
+
+
+        <com.infoicon.acim.utils.customviews.NonScrollExpandableListView
+            android:id="@+id/expendableListViewPartOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@android:color/transparent"
+            android:divider="@android:color/transparent"/>
+
+
+        <com.infoicon.acim.utils.customviews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/titlebar_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="PART II"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="@color/black" />
+
+        <com.infoicon.acim.utils.customviews.CustomTextViewBold
+            android:id="@+id/textViewPartTwoIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textColor="@color/text_color"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:paddingRight="5dp"
+            android:textSize="@dimen/default_text_size"
+            android:text="Introduction" />
+
+
+
+        <com.infoicon.acim.utils.customviews.NonScrollExpandableListView
+            android:id="@+id/expendableListViewPartTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:groupIndicator="@android:color/transparent"
+            android:divider="@android:color/transparent"/>
+
+        <com.infoicon.acim.utils.customviews.CustomTextViewBold
+            android:id="@+id/textViewEpilogue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textColor="@color/text_color"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:paddingRight="5dp"
+            android:textSize="@dimen/default_text_size"
+            android:text="Epilogue" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/retry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/refresh" />
+
+            <com.infoicon.acim.utils.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/retry_message"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

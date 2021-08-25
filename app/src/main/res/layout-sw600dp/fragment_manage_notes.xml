@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.infoicon.acim.utils.customviews.CustomButton
+        android:id="@+id/btnTextNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView"
+        android:drawableRight="@drawable/right_arrow"
+        android:text="@string/text_notes"
+        android:textSize="@dimen/default_text_size"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_color" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.infoicon.acim.utils.customviews.CustomButton
+        android:id="@+id/btnWorkbookNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView"
+        android:drawableRight="@drawable/right_arrow"
+        android:text="@string/workbook_notes"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/default_text_size"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_color"  />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.infoicon.acim.utils.customviews.CustomButton
+        android:id="@+id/btnManualNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView"
+        android:drawableRight="@drawable/right_arrow"
+        android:text="@string/manual_notes"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/default_text_size"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_color"  />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+</LinearLayout>

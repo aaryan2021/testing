@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_white_rectangle_btn"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <com.infoicon.acim.utils.customviews.CustomTextViewBold
+                    android:id="@+id/textViewLesson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Lesson"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/default_text_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <com.infoicon.acim.utils.customviews.CustomTextViewBold
+                    android:id="@+id/textViewReminderTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="My holiness envolves everything my holiness envolves everything  my holiness envolves everything."
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/default_text_size"
+                    android:textStyle="bold" />
+
+                <com.infoicon.acim.utils.customviews.CustomTextView
+                    android:id="@+id/textViewReminderInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Start:12:50 AM | Stop: 8.00 AM | Repeat:Every 10 min"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/layout_del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/reminder_on"
+                    android:background="@android:drawable/list_selector_background" />
+
+                <ImageView
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:padding="10dp"
+                    android:src="@drawable/edit_large"
+                    android:background="@android:drawable/list_selector_background"
+                    />
+
+                <ImageView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/delete_icon_large"
+                    android:background="@android:drawable/list_selector_background"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
